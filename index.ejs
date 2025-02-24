@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Columbia Museum of Art Event</title>
+  <!-- Force refresh every 300s if you want Yodeck to see new data -->
+  <meta http-equiv="refresh" content="300">
+
+  <!-- Load Playfair Display from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Transparent background for the entire page */
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    /* Use Playfair Display everywhere */
+    * {
+      font-family: 'Playfair Display', serif;
+      box-sizing: border-box;
+    }
+    .container {
+      text-align: center;
+      margin: 5vh auto;
+      color: #000;
+      /* optional translucent white background for readability */
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2em;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>ETA: <%= duration %></h1>
+    <p>Distance: <%= distance %></p>
+    <p>
+      From: <%= origin %><br>
+      To: <%= destination %>
+    </p>
+  </div>
+</body>
+</html>
