@@ -10,7 +10,7 @@ app.use(express.static('public')); // optional: if you later want a 'public' fol
 
 // Replace with your real origin/destination
 const ORIGIN = '221 Corley Mill Rd, Lexington, SC';
-const DESTINATION = '1515 Main St, Columbia, SC';
+const DESTINATION = '1615 Blanding St, Columbia, SC';
 
 // Replace with your real Google Distance Matrix API key
 const API_KEY = 'AIzaSyDSjcIsQxjIkd9ReFTxiCcS7_JHhSMQmXY';
